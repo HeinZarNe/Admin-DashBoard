@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+ :root {
+    --primary-soft: #f3f3f3;
+}
+
+.content {
+    background-color: var(--primary-soft);
+    overflow: scroll;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) inset;
+}
+
+.header {
+    position: sticky;
+    top: 0.2rem;
+    z-index: 2000;
+}
+
+.nav-menu {}
+
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-title {
+    padding: 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #949494;
+}
+
+.menu-item {
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+.menu-item:hover {
+    background-color: #e7e7e7;
+    border-radius: 5px;
+}
+
+.menu-item-link {
+    display: flex;
+    justify-content: space-between;
+    color: var(--dark);
+    padding: 10px;
+    text-decoration: none;
+}
+
+.menu-item-link:hover {
+    color: var(--dark);
+}
+
+.active {
+    color: white !important
+}
+
+.menu-spacer {
+    padding: 15px 0;
+}
+
+.nav-menu ul:first-child {
+    margin-top: 5px;
+}
+
+.user-img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.form-control {
+    display: inline;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.show-sidebar-btn {
+    user-select: none;
+    cursor: pointer;
+}
+
+.card {
+    border: none
+}
+
+.status-card {
+    transition: 0.3s;
+    user-select: none;
+}
+
+.status-card:hover {
+    transform: scale(1.05);
+}
+
+.status-card:active {
+    transform: translateY(2px);
+}
+
+.ov-img {
+    margin-left: -35px;
+}
+
+.item-carousel {
+    margin-top: -100px
+}
+
+.item-card-img {
+    height: 200px;
+    width: 160px;
+}
+
+.full-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2005;
+    height: 100vh;
+    overflow: scroll;
+}
+
+@media screen and (max-width: 990px) {
+    .sidebar {
+        position: fixed;
+        width: 300px;
+        z-index: 2001;
+        display: block !important;
+        background-color: white;
+        margin-left: -100%;
+    }
+    .item-carousel-card {
+        margin-top: 100px;
+    }
+}
