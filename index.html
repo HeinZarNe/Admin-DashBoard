@@ -32,6 +32,48 @@
                     <i class="feather-x text-primary" style="font-size: 2em; "></i>
                 </button>
                 </div>
+                <div class="nav-menu">
+                    <ul>
+
+                        <li class="menu-item bg-primary ">
+                            <a href="#" class="menu-item-link">
+                                <span class="active">
+                                <i class="feather-home"></i>
+                                Dashboard
+                            </span>
+
+                            </a>
+                        </li>
+
+                        <li class="menu-spacer"></li>
+
+                        <li class="menu-title">
+                            <span>Manage Item</span>
+                        </li>
+                        <li class="menu-item">
+                            <a href="item.html" class="menu-item-link">
+                                <span>
+                                <i class="feather-plus-circle"></i>
+                                Add Item
+                            </span>
+                                <span>
+                                <div class=" badge rounded-pill bg-secondary shadow-sm">43</div>
+                            </span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="item-list.html" class="menu-item-link">
+                                <span>
+                                <i class="feather-list"></i>
+                                Add list
+                            </span>
+                            </a>
+                        </li>
+                        <li class="menu-spacer"></li>
+
+
+                    </ul>
+                </div>
             </div>
             <!-- SIDEBAR End -->
 
@@ -46,7 +88,7 @@
                     </button>
                             <form action="" method="post">
                                 <div class="form-inline d-none d-md-block">
-                                    <input type="text" class="form-control mr-2"> <button class="btn btn-light">
+                                    <input type="text" style="width:auto !important" class="form-control mr-2"> <button class="btn btn-light">
                                     <i class="feather-search text-primary"></i>
                                     </button>
                                 </div>
@@ -65,6 +107,7 @@
                         </div>
                     </div>
                 </div>
+                <!-- CONTENT -->
                 <div class="row ">
 
                     <div class="col-12 col-md-6 col-lg-6 col-xl-3" onclick="go(`#`)">
@@ -101,7 +144,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 col-md-6 col-lg-6 col-xl-3" onclick="go(`#`)">
+                    <div class="col-12 col-md-6 col-lg-6 col-xl-3" onclick="go(`item-list.html`)">
                         <div class="card shadow status-card mb-4">
                             <div class="card-body">
                                 <div class="row align-items-center">
@@ -340,21 +383,8 @@
                     </div>
                 </div>
             </div>
-            <!-- CONTENT -->
 
-            <div class="row">
-                <div class="col-12">
 
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Library</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Data</li>
-                        </ol>
-                    </nav>
-
-                </div>
-            </div>
 
             <!-- CONTENT End -->
         </div>
